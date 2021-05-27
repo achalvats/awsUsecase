@@ -4,7 +4,7 @@ Resources:
   s3Bucket:
     Type: AWS::S3::Bucket
     Properties: 
-      AccessControl: Private
+      AccessControl: Public
       BucketName: bucket270520210816 
       Tags:
         - Key: Created For
