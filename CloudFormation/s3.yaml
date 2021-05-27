@@ -2,7 +2,7 @@ AWSTemplateFormatVersion: 2010-09-09
 Parameters:
 
   makeS3Bucket:
-    Description: 
+    Description: if true then ony you can make resource
     Type: String
     Default: true
     AllowedValues: [true,false]
@@ -36,6 +36,7 @@ Resources:
 
 Outputs:
   LogicalID:
+    Condition: makeS3Resources
     Description: Information about the value
     Value: !Ref s3Bucket
     Export: 
