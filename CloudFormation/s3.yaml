@@ -1,0 +1,18 @@
+AWSTemplateFormatVersion: 2010-09-09
+
+Resources: 
+  s3Bucket:
+    Type: AWS::S3::Bucket
+    Properties: 
+      AccessControl: Private
+      BucketName: bucket270520210544 
+      Tags:
+        - Key: Created For
+          Value: CodePipelineTest
+
+Outputs:
+  LogicalID:
+    Description: Information about the value
+    Value: !Ref s3Bucket
+    Export: 
+      Name: "S3-BucketName"
