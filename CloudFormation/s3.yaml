@@ -10,7 +10,7 @@ Parameters:
     Description: access of the bucket
     Type: String
     Default: Private
-    AllowedValues: Private | PublicRead | PublicReadWrite | AuthenticatedRead | LogDeliveryWrite | BucketOwnerRead | BucketOwnerFullControl
+    AllowedValues: [Private,PublicRead,PublicReadWrite,AuthenticatedRead,LogDeliveryWrite,BucketOwnerRead,BucketOwnerFullControl]
 Resources: 
 
 
