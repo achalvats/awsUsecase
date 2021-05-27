@@ -5,7 +5,7 @@ Resources:
     Type: AWS::S3::Bucket
     Properties: 
       AccessControl: Private
-      BucketName: bucket2705202105441 
+      BucketName: bucket270520210816 
       Tags:
         - Key: Created For
           Value: CodePipelineTest
