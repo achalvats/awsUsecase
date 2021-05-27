@@ -4,7 +4,7 @@ Parameters:
   makeS3Bucket:
     Description: if true then ony you can make resource
     Type: String
-    Default: true
+    Default: false
     AllowedValues: [true,false]
   
   bucketName:
