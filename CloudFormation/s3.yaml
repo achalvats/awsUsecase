@@ -4,13 +4,13 @@ Parameters:
   makeS3Bucket:
     Description: if true then ony you can make resource
     Type: String
-    Default: false
+    Default: true
     AllowedValues: [true,false]
   
   bucketName:
     Description: name of the bucket
     Type: String
-    Default: bucket270520210816
+    Default: bucket270520210356
 
   s3Access:
     Description: access of the bucket
