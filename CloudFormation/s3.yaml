@@ -1,12 +1,6 @@
 AWSTemplateFormatVersion: 2010-09-09
 Parameters:
 
-  makeS3Bucket:
-    Description: if true then ony you can make resource
-    Type: String
-    Default: false
-    AllowedValues: [true,false]
-  
   bucketName:
     Description: name of the bucket
     Type: String
@@ -18,14 +12,10 @@ Parameters:
     Default: Private
     AllowedValues: [Private,PublicRead,PublicReadWrite,AuthenticatedRead,LogDeliveryWrite,BucketOwnerRead,BucketOwnerFullControl]
 
-Conditions:
-  
-  makeS3Resources: !Equals [ !Ref makeS3Bucket, true]
 
 Resources: 
 
   s3Bucket:
-    Condition: makeS3Resources
     Type: AWS::S3::Bucket
     Properties: 
       AccessControl: !Ref s3Access
